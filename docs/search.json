@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "shinylive.html",
+    "href": "shinylive.html",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive is a way to run Shiny applications directly in a web browser. Traditional Shiny apps usually need a server to run the R code behind the app. Shinylive is different because it allows the app to run on the client side, meaning much of the work happens inside the user’s browser.\nThis is important because it changes how Shiny apps can be shared. Instead of always needing a live server, Shinylive can make it easier to publish and distribute interactive R applications as part of a static website.\n\n\n\nThe biggest difference between Shiny and Shinylive is where the app runs.\nA traditional Shiny app usually runs on a server. The user interacts with the app in their browser, but the server processes the R code and sends the results back. This works well for many professional apps, but it requires hosting and server resources.\nShinylive allows the app to run in the browser using WebAssembly. This means the app can work without a traditional Shiny server. The app files can be hosted as static website files, which makes sharing simpler in some situations.\n\n\n\nShinylive is useful because it makes interactive apps easier to share. For example, a student, instructor, analyst, or coworker could publish an interactive R example on a website without setting up a separate Shiny server.\nThis is helpful for teaching and demonstrations. Instead of asking someone to install R, open RStudio, and run code locally, Shinylive can let them interact with the app directly in the browser.\nShinylive can also be useful for portfolios. A person can show an interactive R project on a website and let viewers test the app themselves.\n\n\n\nOne major benefit of Shinylive is easier publishing. Since the app can run as part of a static website, it can be easier to share through tools like Quarto websites and GitHub Pages.\nAnother benefit is accessibility for the audience. The viewer does not need to install R or run code on their own computer. They can open the page and interact with the app in the browser.\nShinylive can also reduce the need for server maintenance. Since the app does not rely on a traditional Shiny server in the same way, there may be fewer hosting concerns for small examples, teaching materials, or portfolio projects.\n\n\n\nShinylive also has limitations. Since it runs in the browser, it may not be the best choice for very large datasets or complex applications that require a lot of computing power.\nIt may also take longer to load because the browser has to load the tools needed to run the app. For small examples this may be fine, but for larger projects it could be frustrating for users.\nAnother limitation is that Shinylive is not always the right fit for apps that need secure server-side processing, private data, user accounts, databases, or heavy backend work. In those cases, a traditional Shiny app with proper hosting may be better.\n\n\n\nTraditional Shiny is a better choice when the app needs more power, stronger hosting, private data handling, databases, user authentication, or regular business use. If the app is being used by a team or organization and needs to be reliable at scale, traditional Shiny hosting may be the safer option.\nFor example, a company dashboard that connects to live business data would usually make more sense as a traditional Shiny app.\n\n\n\nShinylive is a good choice when the goal is to share a smaller interactive app, teaching example, demonstration, or portfolio project. It works well when the data is not too large and the app does not need private server-side processing.\nFor example, a student portfolio could use Shinylive to show a small interactive dashboard or calculator directly inside a Quarto website.\n\n\n\nShinylive expands what is possible with Shiny by making it easier to run interactive R apps in the browser. Traditional Shiny is still important, especially for larger and more professional applications, but Shinylive is useful for sharing smaller apps through static websites.\nThe main advantage of Shinylive is that it makes interactive R work easier to publish and easier for the audience to access. The main limitation is that it may not be powerful or secure enough for every business use case."
+  },
+  {
+    "objectID": "shinylive.html#introduction",
+    "href": "shinylive.html#introduction",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive is a way to run Shiny applications directly in a web browser. Traditional Shiny apps usually need a server to run the R code behind the app. Shinylive is different because it allows the app to run on the client side, meaning much of the work happens inside the user’s browser.\nThis is important because it changes how Shiny apps can be shared. Instead of always needing a live server, Shinylive can make it easier to publish and distribute interactive R applications as part of a static website."
+  },
+  {
+    "objectID": "shinylive.html#how-shinylive-is-different-from-shiny",
+    "href": "shinylive.html#how-shinylive-is-different-from-shiny",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "The biggest difference between Shiny and Shinylive is where the app runs.\nA traditional Shiny app usually runs on a server. The user interacts with the app in their browser, but the server processes the R code and sends the results back. This works well for many professional apps, but it requires hosting and server resources.\nShinylive allows the app to run in the browser using WebAssembly. This means the app can work without a traditional Shiny server. The app files can be hosted as static website files, which makes sharing simpler in some situations."
+  },
+  {
+    "objectID": "shinylive.html#why-shinylive-is-useful",
+    "href": "shinylive.html#why-shinylive-is-useful",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive is useful because it makes interactive apps easier to share. For example, a student, instructor, analyst, or coworker could publish an interactive R example on a website without setting up a separate Shiny server.\nThis is helpful for teaching and demonstrations. Instead of asking someone to install R, open RStudio, and run code locally, Shinylive can let them interact with the app directly in the browser.\nShinylive can also be useful for portfolios. A person can show an interactive R project on a website and let viewers test the app themselves."
+  },
+  {
+    "objectID": "shinylive.html#benefits-of-shinylive",
+    "href": "shinylive.html#benefits-of-shinylive",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "One major benefit of Shinylive is easier publishing. Since the app can run as part of a static website, it can be easier to share through tools like Quarto websites and GitHub Pages.\nAnother benefit is accessibility for the audience. The viewer does not need to install R or run code on their own computer. They can open the page and interact with the app in the browser.\nShinylive can also reduce the need for server maintenance. Since the app does not rely on a traditional Shiny server in the same way, there may be fewer hosting concerns for small examples, teaching materials, or portfolio projects."
+  },
+  {
+    "objectID": "shinylive.html#limitations-of-shinylive",
+    "href": "shinylive.html#limitations-of-shinylive",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive also has limitations. Since it runs in the browser, it may not be the best choice for very large datasets or complex applications that require a lot of computing power.\nIt may also take longer to load because the browser has to load the tools needed to run the app. For small examples this may be fine, but for larger projects it could be frustrating for users.\nAnother limitation is that Shinylive is not always the right fit for apps that need secure server-side processing, private data, user accounts, databases, or heavy backend work. In those cases, a traditional Shiny app with proper hosting may be better."
+  },
+  {
+    "objectID": "shinylive.html#when-to-use-shiny",
+    "href": "shinylive.html#when-to-use-shiny",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Traditional Shiny is a better choice when the app needs more power, stronger hosting, private data handling, databases, user authentication, or regular business use. If the app is being used by a team or organization and needs to be reliable at scale, traditional Shiny hosting may be the safer option.\nFor example, a company dashboard that connects to live business data would usually make more sense as a traditional Shiny app."
+  },
+  {
+    "objectID": "shinylive.html#when-to-use-shinylive",
+    "href": "shinylive.html#when-to-use-shinylive",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive is a good choice when the goal is to share a smaller interactive app, teaching example, demonstration, or portfolio project. It works well when the data is not too large and the app does not need private server-side processing.\nFor example, a student portfolio could use Shinylive to show a small interactive dashboard or calculator directly inside a Quarto website."
+  },
+  {
+    "objectID": "shinylive.html#conclusion",
+    "href": "shinylive.html#conclusion",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive expands what is possible with Shiny by making it easier to run interactive R apps in the browser. Traditional Shiny is still important, especially for larger and more professional applications, but Shinylive is useful for sharing smaller apps through static websites.\nThe main advantage of Shinylive is that it makes interactive R work easier to publish and easier for the audience to access. The main limitation is that it may not be powerful or secure enough for every business use case."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kennon Holton-Tran",
+    "section": "",
+    "text": "My career goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions."
+  },
+  {
+    "objectID": "index.html#career-aspiration",
+    "href": "index.html#career-aspiration",
+    "title": "Kennon Holton-Tran",
+    "section": "",
+    "text": "My career goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions."
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Kennon Holton-Tran",
+    "section": "Skills",
+    "text": "Skills\n\nBusiness analytics\nDigital marketing\nR and Quarto\nData visualization\nDashboard development\nStrategic planning\nTechnology and product thinking"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Kennon Holton-Tran",
+    "section": "Education",
+    "text": "Education\nCalifornia State Polytechnic University, Pomona\nBusiness Administration, E-Business"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\nCode\n1 + 1\n\n\n[1] 2"
+  },
+  {
+    "objectID": "shiny-apps.html",
+    "href": "shiny-apps.html",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny is an R package that allows people to build interactive web applications directly from R. Instead of only creating static reports, charts, or tables, Shiny lets the audience interact with the information. A user can filter data, choose options, change inputs, and see the results update on the page.\nThis is useful because many business questions are not answered with one single chart. A manager, coworker, or client may want to explore different views of the same data. Shiny makes that possible without requiring the audience to know R code.\n\n\n\nShiny can be used to create dashboards, data tools, reports, calculators, and interactive visualizations. In a workplace setting, a Shiny app could help a marketing team review campaign performance, compare customer segments, or test how different assumptions affect results.\nFor example, instead of sending a coworker a spreadsheet with many tabs, a Shiny app could let them choose a product category, date range, or customer group. The app would then update the charts and tables automatically.\n\n\n\nA Shiny app usually has two main parts: the user interface and the server logic.\nThe user interface controls what the audience sees. This includes titles, text, buttons, dropdown menus, sliders, charts, and tables. The server logic controls what happens behind the scenes. It takes the user’s input, runs the needed R code, and sends the updated output back to the app.\nThis structure is what makes Shiny interactive. The user changes something on the page, and the app responds.\n\n\n\nShiny is valuable because it helps turn data analysis into something people can use directly. A regular report may explain what happened, but a Shiny app lets the audience explore the data themselves.\nThis can make communication clearer. Instead of creating many separate charts for every possible question, the analyst can build one app that allows users to change the view based on what they need.\nShiny is also useful for decision-making. It can help teams compare scenarios, review metrics, and focus on the information that matters most.\n\n\n\nA marketing department could use a Shiny app to review campaign performance across different platforms. The app could include inputs for platform, campaign type, and date range. The output could show impressions, clicks, conversions, conversion rate, and cost per conversion.\nThis would help the team quickly compare performance without manually filtering the data each time.\n\n\n\nShiny is powerful, but it also has limitations. It requires some knowledge of R, and more complex apps can be harder to build and maintain. If the app is shared with many users, it may also need hosting, maintenance, and performance planning.\nAnother limitation is that Shiny apps are not just regular reports. They behave more like software. That means the developer needs to think about usability, errors, speed, and how the audience will interact with the app.\n\n\n\nShiny is a useful tool for creating interactive web applications with R. It helps analysts move beyond static reports and gives the audience a way to explore data directly. For business users, Shiny can make dashboards, decision tools, and data summaries more useful because the information can respond to the user’s needs."
+  },
+  {
+    "objectID": "shiny-apps.html#introduction",
+    "href": "shiny-apps.html#introduction",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny is an R package that allows people to build interactive web applications directly from R. Instead of only creating static reports, charts, or tables, Shiny lets the audience interact with the information. A user can filter data, choose options, change inputs, and see the results update on the page.\nThis is useful because many business questions are not answered with one single chart. A manager, coworker, or client may want to explore different views of the same data. Shiny makes that possible without requiring the audience to know R code."
+  },
+  {
+    "objectID": "shiny-apps.html#what-shiny-is-used-for",
+    "href": "shiny-apps.html#what-shiny-is-used-for",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny can be used to create dashboards, data tools, reports, calculators, and interactive visualizations. In a workplace setting, a Shiny app could help a marketing team review campaign performance, compare customer segments, or test how different assumptions affect results.\nFor example, instead of sending a coworker a spreadsheet with many tabs, a Shiny app could let them choose a product category, date range, or customer group. The app would then update the charts and tables automatically."
+  },
+  {
+    "objectID": "shiny-apps.html#how-shiny-works",
+    "href": "shiny-apps.html#how-shiny-works",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "A Shiny app usually has two main parts: the user interface and the server logic.\nThe user interface controls what the audience sees. This includes titles, text, buttons, dropdown menus, sliders, charts, and tables. The server logic controls what happens behind the scenes. It takes the user’s input, runs the needed R code, and sends the updated output back to the app.\nThis structure is what makes Shiny interactive. The user changes something on the page, and the app responds."
+  },
+  {
+    "objectID": "shiny-apps.html#why-shiny-is-valuable",
+    "href": "shiny-apps.html#why-shiny-is-valuable",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny is valuable because it helps turn data analysis into something people can use directly. A regular report may explain what happened, but a Shiny app lets the audience explore the data themselves.\nThis can make communication clearer. Instead of creating many separate charts for every possible question, the analyst can build one app that allows users to change the view based on what they need.\nShiny is also useful for decision-making. It can help teams compare scenarios, review metrics, and focus on the information that matters most."
+  },
+  {
+    "objectID": "shiny-apps.html#example-business-use",
+    "href": "shiny-apps.html#example-business-use",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "A marketing department could use a Shiny app to review campaign performance across different platforms. The app could include inputs for platform, campaign type, and date range. The output could show impressions, clicks, conversions, conversion rate, and cost per conversion.\nThis would help the team quickly compare performance without manually filtering the data each time."
+  },
+  {
+    "objectID": "shiny-apps.html#limitations-of-shiny",
+    "href": "shiny-apps.html#limitations-of-shiny",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny is powerful, but it also has limitations. It requires some knowledge of R, and more complex apps can be harder to build and maintain. If the app is shared with many users, it may also need hosting, maintenance, and performance planning.\nAnother limitation is that Shiny apps are not just regular reports. They behave more like software. That means the developer needs to think about usability, errors, speed, and how the audience will interact with the app."
+  },
+  {
+    "objectID": "shiny-apps.html#conclusion",
+    "href": "shiny-apps.html#conclusion",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny is a useful tool for creating interactive web applications with R. It helps analysts move beyond static reports and gives the audience a way to explore data directly. For business users, Shiny can make dashboards, decision tools, and data summaries more useful because the information can respond to the user’s needs."
+  }
+]

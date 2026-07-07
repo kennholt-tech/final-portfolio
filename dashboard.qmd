@@ -1,0 +1,175 @@
+---
+title: "Dashboard"
+format: dashboard
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(scales)
+```
+
+```{r}
+#| label: prepare-data
+
+marketing_data <- tibble(
+  platform = c(
+    "Instagram", "Instagram", "Instagram",
+    "TikTok", "TikTok", "TikTok",
+    "Email", "Email", "Email",
+    "YouTube", "YouTube", "YouTube"
+  ),
+  campaign = c(
+    "Awareness", "Engagement", "Conversion",
+    "Awareness", "Engagement", "Conversion",
+    "Awareness", "Engagement", "Conversion",
+    "Awareness", "Engagement", "Conversion"
+  ),
+  impressions = c(
+    12000, 15000, 9000,
+    18000, 22000, 14000,
+    7000, 8500, 6500,
+    10000, 12000, 9500
+  ),
+  clicks = c(
+    720, 1050, 810,
+    1260, 1760, 1540,
+    630, 765, 780,
+    700, 960, 855
+  ),
+  conversions = c(
+    72, 95, 130,
+    90, 140, 210,
+    84, 102, 156,
+    65, 88, 125
+  ),
+  spend = c(
+    900, 1100, 1300,
+    1000, 1500, 1800,
+    400, 450, 600,
+    800, 950, 1200
+  )
+)
+
+marketing_summary <- marketing_data |>
+  mutate(
+    ctr = clicks / impressions,
+    conversion_rate = conversions / clicks,
+    cost_per_conversion = spend / conversions
+  )
+```
+
+# Overview
+
+## Key Metrics
+
+```{r}
+#| content: valuebox
+#| title: "Total Impressions"
+#| icon: eye
+#| color: primary
+
+list(value = comma(sum(marketing_summary$impressions)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Total Clicks"
+#| icon: cursor
+#| color: success
+
+list(value = comma(sum(marketing_summary$clicks)))
+```
+
+```{r}
+#| content: valuebox
+#| title: "Total Conversions"
+#| icon: graph-up-arrow
+#| color: warning
+
+list(value = comma(sum(marketing_summary$conversions)))
+```
+
+## Platform Performance
+
+```{r}
+#| title: "Conversions by Platform"
+
+marketing_summary |>
+  group_by(platform) |>
+  summarize(total_conversions = sum(conversions), .groups = "drop") |>
+  ggplot(aes(x = reorder(platform, total_conversions), y = total_conversions)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    x = "Platform",
+    y = "Conversions",
+    title = "Total Conversions by Platform"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+#| title: "Cost per Conversion by Platform"
+
+marketing_summary |>
+  group_by(platform) |>
+  summarize(cost_per_conversion = sum(spend) / sum(conversions), .groups = "drop") |>
+  ggplot(aes(x = reorder(platform, cost_per_conversion), y = cost_per_conversion)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    x = "Platform",
+    y = "Cost per Conversion",
+    title = "Cost per Conversion by Platform"
+  ) +
+  theme_minimal()
+```
+
+# Campaign Performance
+
+## Campaign Metrics
+
+```{r}
+#| title: "Click-Through Rate by Campaign"
+
+marketing_summary |>
+  group_by(campaign) |>
+  summarize(ctr = sum(clicks) / sum(impressions), .groups = "drop") |>
+  ggplot(aes(x = campaign, y = ctr)) +
+  geom_col() +
+  scale_y_continuous(labels = percent) +
+  labs(
+    x = "Campaign Type",
+    y = "Click-Through Rate",
+    title = "Click-Through Rate by Campaign"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+#| title: "Conversion Rate by Campaign"
+
+marketing_summary |>
+  group_by(campaign) |>
+  summarize(conversion_rate = sum(conversions) / sum(clicks), .groups = "drop") |>
+  ggplot(aes(x = campaign, y = conversion_rate)) +
+  geom_col() +
+  scale_y_continuous(labels = percent) +
+  labs(
+    x = "Campaign Type",
+    y = "Conversion Rate",
+    title = "Conversion Rate by Campaign"
+  ) +
+  theme_minimal()
+```
+
+# Data Notes
+
+This dashboard uses a small sample marketing dataset created for this assignment. The purpose is to demonstrate how Quarto dashboards can organize key metrics, charts, and audience-facing insights in a clear format.
+
+The dashboard focuses on common marketing performance indicators, including impressions, clicks, conversions, click-through rate, conversion rate, and cost per conversion.
+

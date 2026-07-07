@@ -1,0 +1,61 @@
+---
+title: "Essay on Shinylive"
+---
+
+# Essay on Shinylive
+
+## Introduction
+
+Shinylive is a way to run Shiny applications directly in a web browser. Traditional Shiny apps usually need a server to run the R code behind the app. Shinylive is different because it allows the app to run on the client side, meaning much of the work happens inside the user’s browser.
+
+This is important because it changes how Shiny apps can be shared. Instead of always needing a live server, Shinylive can make it easier to publish and distribute interactive R applications as part of a static website.
+
+## How Shinylive Is Different from Shiny
+
+The biggest difference between Shiny and Shinylive is where the app runs.
+
+A traditional Shiny app usually runs on a server. The user interacts with the app in their browser, but the server processes the R code and sends the results back. This works well for many professional apps, but it requires hosting and server resources.
+
+Shinylive allows the app to run in the browser using WebAssembly. This means the app can work without a traditional Shiny server. The app files can be hosted as static website files, which makes sharing simpler in some situations.
+
+## Why Shinylive Is Useful
+
+Shinylive is useful because it makes interactive apps easier to share. For example, a student, instructor, analyst, or coworker could publish an interactive R example on a website without setting up a separate Shiny server.
+
+This is helpful for teaching and demonstrations. Instead of asking someone to install R, open RStudio, and run code locally, Shinylive can let them interact with the app directly in the browser.
+
+Shinylive can also be useful for portfolios. A person can show an interactive R project on a website and let viewers test the app themselves.
+
+## Benefits of Shinylive
+
+One major benefit of Shinylive is easier publishing. Since the app can run as part of a static website, it can be easier to share through tools like Quarto websites and GitHub Pages.
+
+Another benefit is accessibility for the audience. The viewer does not need to install R or run code on their own computer. They can open the page and interact with the app in the browser.
+
+Shinylive can also reduce the need for server maintenance. Since the app does not rely on a traditional Shiny server in the same way, there may be fewer hosting concerns for small examples, teaching materials, or portfolio projects.
+
+## Limitations of Shinylive
+
+Shinylive also has limitations. Since it runs in the browser, it may not be the best choice for very large datasets or complex applications that require a lot of computing power.
+
+It may also take longer to load because the browser has to load the tools needed to run the app. For small examples this may be fine, but for larger projects it could be frustrating for users.
+
+Another limitation is that Shinylive is not always the right fit for apps that need secure server-side processing, private data, user accounts, databases, or heavy backend work. In those cases, a traditional Shiny app with proper hosting may be better.
+
+## When to Use Shiny
+
+Traditional Shiny is a better choice when the app needs more power, stronger hosting, private data handling, databases, user authentication, or regular business use. If the app is being used by a team or organization and needs to be reliable at scale, traditional Shiny hosting may be the safer option.
+
+For example, a company dashboard that connects to live business data would usually make more sense as a traditional Shiny app.
+
+## When to Use Shinylive
+
+Shinylive is a good choice when the goal is to share a smaller interactive app, teaching example, demonstration, or portfolio project. It works well when the data is not too large and the app does not need private server-side processing.
+
+For example, a student portfolio could use Shinylive to show a small interactive dashboard or calculator directly inside a Quarto website.
+
+## Conclusion
+
+Shinylive expands what is possible with Shiny by making it easier to run interactive R apps in the browser. Traditional Shiny is still important, especially for larger and more professional applications, but Shinylive is useful for sharing smaller apps through static websites.
+
+The main advantage of Shinylive is that it makes interactive R work easier to publish and easier for the audience to access. The main limitation is that it may not be powerful or secure enough for every business use case.
