@@ -1,5 +1,5 @@
 ---
-title: "Dashboard"
+title: "Streaming Service Loyalty Dashboard"
 format: dashboard
 ---
 
@@ -9,57 +9,47 @@ format: dashboard
 #| warning: false
 
 library(tidyverse)
+library(readxl)
 library(scales)
 ```
 
 ```{r}
-#| label: prepare-data
+#| label: load-data
 
-marketing_data <- tibble(
-  platform = c(
-    "Instagram", "Instagram", "Instagram",
-    "TikTok", "TikTok", "TikTok",
-    "Email", "Email", "Email",
-    "YouTube", "YouTube", "YouTube"
-  ),
-  campaign = c(
-    "Awareness", "Engagement", "Conversion",
-    "Awareness", "Engagement", "Conversion",
-    "Awareness", "Engagement", "Conversion",
-    "Awareness", "Engagement", "Conversion"
-  ),
-  impressions = c(
-    12000, 15000, 9000,
-    18000, 22000, 14000,
-    7000, 8500, 6500,
-    10000, 12000, 9500
-  ),
-  clicks = c(
-    720, 1050, 810,
-    1260, 1760, 1540,
-    630, 765, 780,
-    700, 960, 855
-  ),
-  conversions = c(
-    72, 95, 130,
-    90, 140, 210,
-    84, 102, 156,
-    65, 88, 125
-  ),
-  spend = c(
-    900, 1100, 1300,
-    1000, 1500, 1800,
-    400, 450, 600,
-    800, 950, 1200
-  )
+survey_raw <- read_excel(
+  "data/streaming-survey-cleaned.xlsx",
+  sheet = "Analysis Data"
 )
 
-marketing_summary <- marketing_data |>
+survey_data <- survey_raw |>
+  filter(ResponseId != "Response ID") |>
   mutate(
-    ctr = clicks / impressions,
-    conversion_rate = conversions / clicks,
-    cost_per_conversion = spend / conversions
+    loyalty_index = as.numeric(`Loyalty Index`),
+    nps_score = as.numeric(Q4),
+    nps_category = `NPS Category`,
+    cancellation_risk = `Cancellation Risk`,
+    cancelled_last_year = `Cancelled A Service Within The Last Year`,
+    keep_using = as.numeric(Q3_1),
+    first_choice = as.numeric(Q3_2),
+    recommend = as.numeric(Q3_3),
+    not_switch = as.numeric(Q3_4),
+    trust = as.numeric(Q3_5),
+    cancellation_likelihood = as.numeric(Q6)
   )
+
+valid_responses <- nrow(survey_data)
+
+mean_loyalty <- mean(survey_data$loyalty_index, na.rm = TRUE)
+
+high_risk_pct <- survey_data |>
+  summarize(value = mean(cancellation_risk == "High risk", na.rm = TRUE)) |>
+  pull(value)
+
+cancelled_pct <- survey_data |>
+  summarize(value = mean(cancelled_last_year == "Yes", na.rm = TRUE)) |>
+  pull(value)
+
+avg_nps <- mean(survey_data$nps_score, na.rm = TRUE)
 ```
 
 # Overview
@@ -68,108 +58,171 @@ marketing_summary <- marketing_data |>
 
 ```{r}
 #| content: valuebox
-#| title: "Total Impressions"
-#| icon: eye
+#| title: "Valid Responses"
+#| icon: people
 #| color: primary
 
-list(value = comma(sum(marketing_summary$impressions)))
+list(value = comma(valid_responses))
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Total Clicks"
-#| icon: cursor
+#| title: "Mean Loyalty Index"
+#| icon: star
 #| color: success
 
-list(value = comma(sum(marketing_summary$clicks)))
+list(value = number(mean_loyalty, accuracy = 0.01))
 ```
 
 ```{r}
 #| content: valuebox
-#| title: "Total Conversions"
-#| icon: graph-up-arrow
+#| title: "High Cancellation Risk"
+#| icon: exclamation-triangle
 #| color: warning
 
-list(value = comma(sum(marketing_summary$conversions)))
+list(value = percent(high_risk_pct, accuracy = 1))
 ```
 
-## Platform Performance
+```{r}
+#| content: valuebox
+#| title: "Cancelled Last Year"
+#| icon: x-circle
+#| color: danger
+
+list(value = percent(cancelled_pct, accuracy = 1))
+```
+
+## Loyalty and Risk
 
 ```{r}
-#| title: "Conversions by Platform"
+#| title: "NPS Category Breakdown"
 
-marketing_summary |>
-  group_by(platform) |>
-  summarize(total_conversions = sum(conversions), .groups = "drop") |>
-  ggplot(aes(x = reorder(platform, total_conversions), y = total_conversions)) +
+survey_data |>
+  filter(!is.na(nps_category)) |>
+  count(nps_category) |>
+  ggplot(aes(x = reorder(nps_category, n), y = n)) +
   geom_col() +
   coord_flip() +
   labs(
-    x = "Platform",
-    y = "Conversions",
-    title = "Total Conversions by Platform"
+    x = "NPS Category",
+    y = "Number of Respondents",
+    title = "NPS Category Breakdown"
   ) +
   theme_minimal()
 ```
 
 ```{r}
-#| title: "Cost per Conversion by Platform"
+#| title: "Cancellation Risk Breakdown"
 
-marketing_summary |>
-  group_by(platform) |>
-  summarize(cost_per_conversion = sum(spend) / sum(conversions), .groups = "drop") |>
-  ggplot(aes(x = reorder(platform, cost_per_conversion), y = cost_per_conversion)) +
+survey_data |>
+  filter(!is.na(cancellation_risk)) |>
+  count(cancellation_risk) |>
+  ggplot(aes(x = reorder(cancellation_risk, n), y = n)) +
   geom_col() +
   coord_flip() +
   labs(
-    x = "Platform",
-    y = "Cost per Conversion",
-    title = "Cost per Conversion by Platform"
+    x = "Cancellation Risk",
+    y = "Number of Respondents",
+    title = "Cancellation Risk Breakdown"
   ) +
   theme_minimal()
 ```
 
-# Campaign Performance
+# Loyalty Drivers
 
-## Campaign Metrics
+## Loyalty Statement Averages
 
 ```{r}
-#| title: "Click-Through Rate by Campaign"
+#| title: "Average Ratings for Loyalty Statements"
 
-marketing_summary |>
-  group_by(campaign) |>
-  summarize(ctr = sum(clicks) / sum(impressions), .groups = "drop") |>
-  ggplot(aes(x = campaign, y = ctr)) +
+loyalty_statement_data <- survey_data |>
+  summarize(
+    `Intend to keep using` = mean(keep_using, na.rm = TRUE),
+    `One of my first choices` = mean(first_choice, na.rm = TRUE),
+    `Would recommend` = mean(recommend, na.rm = TRUE),
+    `Would not easily switch` = mean(not_switch, na.rm = TRUE),
+    `Trust the service` = mean(trust, na.rm = TRUE)
+  ) |>
+  pivot_longer(
+    cols = everything(),
+    names_to = "statement",
+    values_to = "average_rating"
+  )
+
+loyalty_statement_data |>
+  ggplot(aes(x = reorder(statement, average_rating), y = average_rating)) +
   geom_col() +
-  scale_y_continuous(labels = percent) +
+  coord_flip() +
+  scale_y_continuous(limits = c(0, 5)) +
   labs(
-    x = "Campaign Type",
-    y = "Click-Through Rate",
-    title = "Click-Through Rate by Campaign"
+    x = "Loyalty Statement",
+    y = "Average Rating",
+    title = "Average Ratings for Loyalty Statements"
   ) +
   theme_minimal()
 ```
 
 ```{r}
-#| title: "Conversion Rate by Campaign"
+#| title: "Loyalty Index by Cancellation History"
 
-marketing_summary |>
-  group_by(campaign) |>
-  summarize(conversion_rate = sum(conversions) / sum(clicks), .groups = "drop") |>
-  ggplot(aes(x = campaign, y = conversion_rate)) +
-  geom_col() +
-  scale_y_continuous(labels = percent) +
+survey_data |>
+  filter(!is.na(cancelled_last_year), !is.na(loyalty_index)) |>
+  ggplot(aes(x = cancelled_last_year, y = loyalty_index)) +
+  geom_boxplot() +
+  scale_y_continuous(limits = c(0, 5)) +
   labs(
-    x = "Campaign Type",
-    y = "Conversion Rate",
-    title = "Conversion Rate by Campaign"
+    x = "Cancelled a Streaming Service Within the Past Year",
+    y = "Loyalty Index",
+    title = "Loyalty Index by Cancellation History"
+  ) +
+  theme_minimal()
+```
+
+# Cancellation Behavior
+
+## Risk and Retention
+
+```{r}
+#| title: "Cancellation Risk by Past Cancellation"
+
+survey_data |>
+  filter(!is.na(cancelled_last_year), !is.na(cancellation_risk)) |>
+  count(cancelled_last_year, cancellation_risk) |>
+  group_by(cancelled_last_year) |>
+  mutate(percent = n / sum(n)) |>
+  ggplot(aes(x = cancelled_last_year, y = percent, fill = cancellation_risk)) +
+  geom_col(position = "fill") +
+  scale_y_continuous(labels = percent_format()) +
+  labs(
+    x = "Cancelled a Streaming Service Within the Past Year",
+    y = "Percent of Respondents",
+    fill = "Cancellation Risk",
+    title = "Cancellation Risk by Past Cancellation"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+#| title: "Cancellation Likelihood Distribution"
+
+survey_data |>
+  filter(!is.na(cancellation_likelihood)) |>
+  count(cancellation_likelihood) |>
+  ggplot(aes(x = factor(cancellation_likelihood), y = n)) +
+  geom_col() +
+  labs(
+    x = "Likelihood of Canceling in the Next 6 Months",
+    y = "Number of Respondents",
+    title = "Cancellation Likelihood Distribution"
   ) +
   theme_minimal()
 ```
 
 # Data Notes
 
-This dashboard uses a small sample marketing dataset created for this assignment. The purpose is to demonstrate how Quarto dashboards can organize key metrics, charts, and audience-facing insights in a clear format.
+This dashboard uses survey data from the Streaming Service Loyalty research project. The purpose of the dashboard is to summarize loyalty, recommendation behavior, and cancellation risk among streaming service consumers.
 
-The dashboard focuses on common marketing performance indicators, including impressions, clicks, conversions, click-through rate, conversion rate, and cost per conversion.
+The dashboard focuses on key indicators such as loyalty index, NPS category, cancellation risk, and whether respondents canceled a streaming service within the past year.
+
+Because the survey sample is small, the results should be interpreted as exploratory rather than representative of the entire streaming market.
 

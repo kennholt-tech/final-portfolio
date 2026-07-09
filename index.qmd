@@ -7,21 +7,79 @@ about:
   image-shape: round
 ---
 
-## Career Aspiration
+# Professional Summary
 
-My career goal is to move into a strategic leadership role where I can help define a company's vision, organize the structure needed to support that vision, and use data to guide better business decisions.
+I am a Business Administration student with an E-Business emphasis at California State Polytechnic University, Pomona. My interests sit at the intersection of strategy, analytics, technology, and digital business.
 
-## Skills
+My career goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions.
+
+# Career Objective
+
+I am interested in roles that combine business strategy, analytics, digital marketing, and technology. Long term, I want to work in a leadership role where I can help organizations improve systems, make better decisions, and connect big-picture goals to practical execution.
+
+::: {.skills-grid}
+
+::: {.skill-card}
+
+# Core Skills
 
 - Business analytics
 - Digital marketing
+- Google Analytics 4
 - R and Quarto
 - Data visualization
 - Dashboard development
 - Strategic planning
 - Technology and product thinking
+- Professional communication
+- Project organization
 
-## Education
+:::
 
-California State Polytechnic University, Pomona\
+::: {.skill-card}
+
+# Technical Tools
+
+- Quarto
+- R
+- GitHub Pages
+- Google Analytics 4
+- Google Ads
+- Tableau
+- Power BI
+- Looker Studio
+- BigQuery
+
+:::
+
+:::
+
+# Education
+
+**California State Polytechnic University, Pomona**  
 Business Administration, E-Business
+
+# Portfolio Highlights
+
+## Marketing Analytics Dashboard
+
+I built a Quarto dashboard that summarizes marketing campaign performance using impressions, clicks, conversions, click-through rate, conversion rate, and cost per conversion.
+
+## Google Analytics 4
+
+I completed the Google Analytics Certification in 2026 and built a portfolio page explaining how GA4 supports digital measurement, marketing analysis, and business decision-making.
+
+## Projects
+
+My projects page includes work connected to streaming service loyalty, Google Analytics, dashboard development, entrepreneurship, and career branding.
+
+## Revealjs Presentation
+
+I created a Revealjs presentation using Quarto to summarize my portfolio, technical skills, business skills, and career direction.
+
+# Professional Strengths
+
+My strengths are strongest when I can connect ideas, organize messy information, and turn broad goals into a clearer plan. I like work that requires both strategic thinking and practical follow-through.
+
+I am especially interested in work where data, systems, and people all matter. I want to help teams make smarter decisions, communicate more clearly, and build better structures around their goals.
+

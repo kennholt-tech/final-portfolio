@@ -1,1 +1,41 @@
-/* css styles */
+/* Portfolio custom styling */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: left !important;
+}
+
+.skill-card {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.skill-card h1 {
+  text-align: left !important;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+.skill-card ul {
+  text-align: left !important;
+  padding-left: 1.3rem;
+  margin-bottom: 0;
+}
+
+.skill-card li {
+  text-align: left !important;
+}
+
+/* Stack the cards on smaller screens */
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

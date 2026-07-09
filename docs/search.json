@@ -63,32 +63,81 @@
     "text": "Shinylive expands what is possible with Shiny by making it easier to run interactive R apps in the browser. Traditional Shiny is still important, especially for larger and more professional applications, but Shinylive is useful for sharing smaller apps through static websites.\nThe main advantage of Shinylive is that it makes interactive R work easier to publish and easier for the audience to access. The main limitation is that it may not be powerful or secure enough for every business use case."
   },
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page highlights selected work in analytics, digital marketing, business strategy, and data visualization. These projects reflect my interest in using data, technology, and structured thinking to support better business decisions."
+  },
+  {
+    "objectID": "projects.html#streaming-service-loyalty-research",
+    "href": "projects.html#streaming-service-loyalty-research",
+    "title": "Projects",
+    "section": "Streaming Service Loyalty Research",
+    "text": "Streaming Service Loyalty Research\nProject Focus: Marketing research and consumer behavior\nThis project explores what influences customer loyalty to streaming services. The research focuses on why people keep, cancel, or switch platforms when they have multiple subscriptions, rising monthly costs, and many competing entertainment options.\nBusiness Question:\nWhat factors make customers stay loyal to a streaming service?\nKey Areas Explored:\n\nPrice sensitivity\nCustomer satisfaction\nContent quality\nOriginal content releases\nNumber of subscriptions\nCancellation intent\nPlatform loyalty\n\nSkills Demonstrated:\n\nMarketing research planning\nResearch question development\nConsumer behavior analysis\nSurvey design thinking\nData-driven decision-making\n\nProfessional Value:\nThis project shows my ability to think through a business problem from the customer’s perspective and connect research questions to real business decisions."
+  },
+  {
+    "objectID": "projects.html#google-analytics-4-analysis",
+    "href": "projects.html#google-analytics-4-analysis",
+    "title": "Projects",
+    "section": "Google Analytics 4 Analysis",
+    "text": "Google Analytics 4 Analysis\nProject Focus: Digital analytics and website measurement\nThis project used Google Analytics 4 to explore how businesses can measure website and app behavior. The work focused on events, conversions, realtime reports, and how analytics can support marketing decisions.\nBusiness Question:\nHow can website behavior data help a business understand whether its marketing is working?\nKey Areas Explored:\n\nData streams\nEvents\nConversions\nRealtime reporting\nUser behavior\nCampaign performance\nDigital measurement\n\nSkills Demonstrated:\n\nGA4 navigation\nEvent and conversion analysis\nDigital marketing measurement\nWebsite behavior interpretation\nBusiness performance analysis\n\nProfessional Value:\nThis project shows my ability to connect digital activity to business goals instead of only looking at surface-level traffic numbers."
+  },
+  {
+    "objectID": "projects.html#marketing-performance-dashboard",
+    "href": "projects.html#marketing-performance-dashboard",
+    "title": "Projects",
+    "section": "Marketing Performance Dashboard",
+    "text": "Marketing Performance Dashboard\nProject Focus: Dashboard development and marketing analytics\nThis project used Quarto and R to build a dashboard that summarizes marketing campaign performance across several platforms. The dashboard uses metrics such as impressions, clicks, conversions, click-through rate, conversion rate, and cost per conversion.\nBusiness Question:\nWhich marketing platforms and campaign types are performing best?\nKey Metrics Used:\n\nImpressions\nClicks\nConversions\nClick-through rate\nConversion rate\nCost per conversion\n\nSkills Demonstrated:\n\nR programming\nQuarto dashboard development\nData visualization\nMarketing KPI analysis\nAudience-facing reporting\nDashboard organization\n\nProfessional Value:\nThis project shows my ability to turn performance data into a clear visual format that helps people compare results and make decisions."
+  },
+  {
+    "objectID": "projects.html#wallpix-innovation-project",
+    "href": "projects.html#wallpix-innovation-project",
+    "title": "Projects",
+    "section": "WallPix Innovation Project",
+    "text": "WallPix Innovation Project\nProject Focus: Entrepreneurship and product strategy\nWallPix was developed as an innovation project focused on turning personal photos into customizable wall art. The project explored value proposition, target customers, product positioning, and business model development.\nBusiness Question:\nHow can a creative product idea be positioned for a specific customer need?\nKey Areas Explored:\n\nValue proposition\nTarget market\nCustomer need\nProduct positioning\nBusiness model planning\nCreative differentiation\n\nSkills Demonstrated:\n\nEntrepreneurial thinking\nProduct concept development\nCustomer value analysis\nBusiness model planning\nCreative strategy\n\nProfessional Value:\nThis project shows my ability to think beyond the product itself and consider how an idea creates value for a specific audience."
+  },
+  {
+    "objectID": "projects.html#career-branding-and-linkedin-strategy",
+    "href": "projects.html#career-branding-and-linkedin-strategy",
+    "title": "Projects",
+    "section": "Career Branding and LinkedIn Strategy",
+    "text": "Career Branding and LinkedIn Strategy\nProject Focus: Professional positioning and communication\nThis project focused on building a stronger professional brand around strategic leadership, analytics, and digital business. It included refining profile language, identifying career direction, and communicating strengths more clearly to employers.\nBusiness Question:\nHow can a professional profile communicate a clear career direction quickly and effectively?\nKey Areas Explored:\n\nProfessional summary writing\nLinkedIn profile strategy\nCareer objective development\nSkills positioning\nPersonal branding\nAudience awareness\n\nSkills Demonstrated:\n\nProfessional communication\nCareer strategy\nPersonal branding\nLinkedIn optimization\nStrategic positioning\n\nProfessional Value:\nThis project shows my ability to communicate strengths clearly and align professional materials with a specific career direction."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Kennon Holton-Tran",
     "section": "",
-    "text": "My career goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions."
+    "text": "I am a Business Administration student with an E-Business emphasis at California State Polytechnic University, Pomona. My interests sit at the intersection of strategy, analytics, technology, and digital business.\nMy career goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions."
   },
   {
-    "objectID": "index.html#career-aspiration",
-    "href": "index.html#career-aspiration",
+    "objectID": "index.html#marketing-analytics-dashboard",
+    "href": "index.html#marketing-analytics-dashboard",
     "title": "Kennon Holton-Tran",
-    "section": "",
-    "text": "My career goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions."
+    "section": "Marketing Analytics Dashboard",
+    "text": "Marketing Analytics Dashboard\nI built a Quarto dashboard that summarizes marketing campaign performance using impressions, clicks, conversions, click-through rate, conversion rate, and cost per conversion."
   },
   {
-    "objectID": "index.html#skills",
-    "href": "index.html#skills",
+    "objectID": "index.html#google-analytics-4",
+    "href": "index.html#google-analytics-4",
     "title": "Kennon Holton-Tran",
-    "section": "Skills",
-    "text": "Skills\n\nBusiness analytics\nDigital marketing\nR and Quarto\nData visualization\nDashboard development\nStrategic planning\nTechnology and product thinking"
+    "section": "Google Analytics 4",
+    "text": "Google Analytics 4\nI completed the Google Analytics Certification in 2026 and built a portfolio page explaining how GA4 supports digital measurement, marketing analysis, and business decision-making."
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
     "title": "Kennon Holton-Tran",
-    "section": "Education",
-    "text": "Education\nCalifornia State Polytechnic University, Pomona\nBusiness Administration, E-Business"
+    "section": "Projects",
+    "text": "Projects\nMy projects page includes work connected to streaming service loyalty, Google Analytics, dashboard development, entrepreneurship, and career branding."
+  },
+  {
+    "objectID": "index.html#revealjs-presentation",
+    "href": "index.html#revealjs-presentation",
+    "title": "Kennon Holton-Tran",
+    "section": "Revealjs Presentation",
+    "text": "Revealjs Presentation\nI created a Revealjs presentation using Quarto to summarize my portfolio, technical skills, business skills, and career direction."
   },
   {
     "objectID": "about.html",
@@ -96,6 +145,153 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n\nCode\n1 + 1\n\n\n[1] 2"
+  },
+  {
+    "objectID": "google-analytics.html",
+    "href": "google-analytics.html",
+    "title": "Google Analytics",
+    "section": "",
+    "text": "This page highlights my work with Google Analytics 4 and how web analytics can support better marketing and business decisions."
+  },
+  {
+    "objectID": "google-analytics.html#certification",
+    "href": "google-analytics.html#certification",
+    "title": "Google Analytics",
+    "section": "Certification",
+    "text": "Certification\nI completed the Google Analytics Certification in 2026. This certification supports my understanding of digital measurement, website behavior, events, conversions, and marketing performance analysis."
+  },
+  {
+    "objectID": "google-analytics.html#project-overview",
+    "href": "google-analytics.html#project-overview",
+    "title": "Google Analytics",
+    "section": "Project Overview",
+    "text": "Project Overview\nFor this project, I worked with Google Analytics 4, also known as GA4. GA4 is used to measure how people interact with websites and apps. It helps businesses understand where users come from, what actions they take, and whether those actions support business goals.\nThe main purpose of this work was to understand how analytics can connect user behavior to decision-making. Instead of only looking at traffic numbers, GA4 helps show what people actually do after arriving on a website."
+  },
+  {
+    "objectID": "google-analytics.html#key-concepts",
+    "href": "google-analytics.html#key-concepts",
+    "title": "Google Analytics",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nData Streams\nA data stream is the source of data flowing into a GA4 property. A company may have a website data stream, an app data stream, or both. This allows GA4 to collect information from different digital platforms in one place.\n\n\nEvents\nGA4 uses events to track user interactions. Events can include actions such as page views, clicks, scrolls, form submissions, video plays, and purchases.\nThis is important because modern analytics is not only about counting visits. It is about understanding specific behaviors.\n\n\nConversions\nConversions are important events that connect to business goals. For example, a purchase, sign-up, lead form submission, or demo request could be marked as a conversion.\nConversions help a business measure whether its website is actually producing useful outcomes.\n\n\nRealtime Reports\nRealtime reports show what users are doing on a website or app in the last 30 minutes. This can help confirm whether tracking is working and whether users are currently active.\nRealtime reporting is useful for testing campaigns, checking new tracking setups, and monitoring live activity."
+  },
+  {
+    "objectID": "google-analytics.html#business-value-of-ga4",
+    "href": "google-analytics.html#business-value-of-ga4",
+    "title": "Google Analytics",
+    "section": "Business Value of GA4",
+    "text": "Business Value of GA4\nGA4 is valuable because it helps businesses make better decisions with actual user behavior data. A business can use GA4 to answer questions such as:\n\nWhere are visitors coming from?\nWhich pages are attracting attention?\nWhich actions are users taking?\nAre users completing important goals?\nWhich campaigns appear to be driving useful traffic?\n\nThis kind of information can help marketing teams improve campaigns, website content, and user experience."
+  },
+  {
+    "objectID": "google-analytics.html#example-use-case",
+    "href": "google-analytics.html#example-use-case",
+    "title": "Google Analytics",
+    "section": "Example Use Case",
+    "text": "Example Use Case\nA company running a digital marketing campaign could use GA4 to evaluate whether the campaign is working. The team could review traffic sources, user engagement, events, and conversions.\nFor example, if a campaign drives many visitors but very few conversions, the business may need to improve the landing page, adjust the audience targeting, or change the call to action.\nIf a campaign drives fewer visitors but a higher conversion rate, that traffic may be more valuable even if the overall volume is smaller."
+  },
+  {
+    "objectID": "google-analytics.html#skills-demonstrated",
+    "href": "google-analytics.html#skills-demonstrated",
+    "title": "Google Analytics",
+    "section": "Skills Demonstrated",
+    "text": "Skills Demonstrated\nThis project helped me practice skills related to digital analytics and marketing measurement, including:\n\nNavigating GA4 reports\nUnderstanding events and conversions\nReviewing realtime user activity\nConnecting website behavior to business goals\nThinking critically about marketing performance\nUsing analytics to support decision-making"
+  },
+  {
+    "objectID": "google-analytics.html#reflection",
+    "href": "google-analytics.html#reflection",
+    "title": "Google Analytics",
+    "section": "Reflection",
+    "text": "Reflection\nGA4 is useful because it helps move marketing analysis beyond surface-level metrics. Page views and traffic are helpful, but they do not tell the full story. A stronger analysis looks at what users do, whether they engage, and whether their actions support the goals of the organization.\nThis connects directly to my career interests because I want to work in roles that combine strategy, technology, and data. GA4 is one example of how digital tools can help leaders understand performance and make better decisions."
+  },
+  {
+    "objectID": "presentation.html#kennon-holton-tran",
+    "href": "presentation.html#kennon-holton-tran",
+    "title": "Portfolio Presentation",
+    "section": "Kennon Holton-Tran",
+    "text": "Kennon Holton-Tran\nBusiness Administration, E-Business\nCalifornia State Polytechnic University, Pomona\nPortfolio Focus:\nAnalytics, digital marketing, dashboards, and business strategy\n\nUse the arrow controls or press the right arrow key → to move through the presentation.\n← Back to Portfolio Home"
+  },
+  {
+    "objectID": "presentation.html#career-direction",
+    "href": "presentation.html#career-direction",
+    "title": "Portfolio Presentation",
+    "section": "Career Direction",
+    "text": "Career Direction\nMy goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions.\nI am interested in work that combines:\n\nStrategy\nAnalytics\nTechnology\nDigital business\nCommunication\nTeam execution"
+  },
+  {
+    "objectID": "presentation.html#portfolio-overview",
+    "href": "presentation.html#portfolio-overview",
+    "title": "Portfolio Presentation",
+    "section": "Portfolio Overview",
+    "text": "Portfolio Overview\nThis website includes:\n\nA professional home page\nA projects page\nA streaming service loyalty dashboard\nA Google Analytics page\nThis Revealjs presentation\n\nThe goal is to show both technical skill and business thinking."
+  },
+  {
+    "objectID": "presentation.html#featured-project",
+    "href": "presentation.html#featured-project",
+    "title": "Portfolio Presentation",
+    "section": "Featured Project",
+    "text": "Featured Project\nStreaming Service Loyalty Research\nThis project explores what influences customer loyalty to streaming platforms.\nKey areas include:\n\nPrice sensitivity\nSatisfaction\nContent quality\nOriginal content\nCancellation intent\nPlatform loyalty"
+  },
+  {
+    "objectID": "presentation.html#dashboard-development",
+    "href": "presentation.html#dashboard-development",
+    "title": "Portfolio Presentation",
+    "section": "Dashboard Development",
+    "text": "Dashboard Development\nI built a Quarto dashboard using survey data from the Streaming Service Loyalty project.\nThe dashboard summarizes:\n\nValid survey responses\nMean loyalty index\nHigh cancellation risk\nPast-year cancellation behavior\nNPS categories\nLoyalty statement averages"
+  },
+  {
+    "objectID": "presentation.html#why-the-dashboard-matters",
+    "href": "presentation.html#why-the-dashboard-matters",
+    "title": "Portfolio Presentation",
+    "section": "Why the Dashboard Matters",
+    "text": "Why the Dashboard Matters\nThe dashboard turns survey data into a clearer decision-making tool.\nInstead of only reading raw responses, the audience can quickly understand:\n\nHow loyal respondents appear to be\nWhether cancellation risk is present\nWhich loyalty statements score higher or lower\nHow cancellation history relates to loyalty"
+  },
+  {
+    "objectID": "presentation.html#google-analytics-4",
+    "href": "presentation.html#google-analytics-4",
+    "title": "Portfolio Presentation",
+    "section": "Google Analytics 4",
+    "text": "Google Analytics 4\nMy Google Analytics page highlights work with GA4 and digital measurement.\nGA4 helps businesses understand:\n\nWhere users come from\nWhat users do on a website or app\nWhich actions support business goals\nWhether campaigns are producing meaningful outcomes"
+  },
+  {
+    "objectID": "presentation.html#certification-evidence",
+    "href": "presentation.html#certification-evidence",
+    "title": "Portfolio Presentation",
+    "section": "Certification Evidence",
+    "text": "Certification Evidence\nI completed the Google Analytics Certification in 2026.\nThis supports my understanding of:\n\nDigital measurement\nEvents\nConversions\nWebsite behavior\nMarketing performance analysis"
+  },
+  {
+    "objectID": "presentation.html#technical-skills-demonstrated",
+    "href": "presentation.html#technical-skills-demonstrated",
+    "title": "Portfolio Presentation",
+    "section": "Technical Skills Demonstrated",
+    "text": "Technical Skills Demonstrated\nThis portfolio demonstrates experience with:\n\nQuarto websites\nQuarto dashboards\nRevealjs presentations\nR\nData visualization\nGitHub Pages\nGoogle Analytics 4\nExcel-based survey analysis"
+  },
+  {
+    "objectID": "presentation.html#business-skills-demonstrated",
+    "href": "presentation.html#business-skills-demonstrated",
+    "title": "Portfolio Presentation",
+    "section": "Business Skills Demonstrated",
+    "text": "Business Skills Demonstrated\nThis portfolio also reflects:\n\nStrategic thinking\nMarketing research planning\nConsumer behavior analysis\nProfessional communication\nProject organization\nAudience-focused reporting\nTranslating data into decisions"
+  },
+  {
+    "objectID": "presentation.html#strengths",
+    "href": "presentation.html#strengths",
+    "title": "Portfolio Presentation",
+    "section": "Strengths",
+    "text": "Strengths\nMy strengths are strongest at the intersection of strategy, technology, and communication.\nI like work that involves:\n\nUnderstanding the larger goal\nOrganizing the moving pieces\nFinding useful patterns in information\nCommunicating clearly\nHelping teams make better decisions"
+  },
+  {
+    "objectID": "presentation.html#career-objective",
+    "href": "presentation.html#career-objective",
+    "title": "Portfolio Presentation",
+    "section": "Career Objective",
+    "text": "Career Objective\nLong term, I want to build toward leadership roles where I can help organizations improve systems, clarify strategy, and make better decisions with data.\nI am especially interested in roles connected to:\n\nBusiness analytics\nDigital strategy\nProduct thinking\nMarketing analytics\nOperations and execution"
+  },
+  {
+    "objectID": "presentation.html#closing",
+    "href": "presentation.html#closing",
+    "title": "Portfolio Presentation",
+    "section": "Closing",
+    "text": "Closing\nThis portfolio represents my current work in analytics, digital tools, marketing research, and business strategy.\nIt shows the direction I want to keep building toward:\nstrategic, analytical, organized, and impact-focused.\n\n← Return to Portfolio Home"
   },
   {
     "objectID": "shiny-apps.html",

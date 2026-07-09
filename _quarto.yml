@@ -3,17 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "M10: Sharing Outputs with the Audience"
+  title: "Kennon Holton-Tran"
   navbar:
     left:
       - href: index.qmd
         text: Home
+      - href: projects.qmd
+        text: Projects
       - href: dashboard.qmd
         text: Dashboard
-      - href: shiny-apps.qmd
-        text: Essay on Shiny Apps
-      - href: shinylive.qmd
-        text: Essay on Shinylive
+      - href: google-analytics.qmd
+        text: Google Analytics
+      - href: presentation.qmd
+        text: Presentation
 
 format:
   html:
@@ -22,5 +24,5 @@ format:
     toc: true
     toc-depth: 3
     code-fold: true
-
+    
     

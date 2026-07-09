@@ -1,0 +1,177 @@
+---
+title: "Portfolio Presentation"
+subtitle: "Analytics, Digital Strategy, and Business Decision-Making"
+author: "Kennon Holton-Tran"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    controls: true
+    progress: true
+    keyboard: true
+    touch: true
+    footer: "<a href='index.html'>← Back to Portfolio Home</a>"
+---
+
+## Kennon Holton-Tran
+
+Business Administration, E-Business  
+California State Polytechnic University, Pomona
+
+**Portfolio Focus:**  
+Analytics, digital marketing, dashboards, and business strategy
+
+<br>
+
+**Use the arrow controls or press the right arrow key → to move through the presentation.**
+
+[← Back to Portfolio Home](index.html)
+
+## Career Direction
+
+My goal is to move into a strategic leadership role where I can help define a company’s vision, organize the structure needed to support that vision, and use data to guide better business decisions.
+
+I am interested in work that combines:
+
+- Strategy
+- Analytics
+- Technology
+- Digital business
+- Communication
+- Team execution
+
+## Portfolio Overview
+
+This website includes:
+
+- A professional home page
+- A projects page
+- A streaming service loyalty dashboard
+- A Google Analytics page
+- This Revealjs presentation
+
+The goal is to show both technical skill and business thinking.
+
+## Featured Project
+
+### Streaming Service Loyalty Research
+
+This project explores what influences customer loyalty to streaming platforms.
+
+Key areas include:
+
+- Price sensitivity
+- Satisfaction
+- Content quality
+- Original content
+- Cancellation intent
+- Platform loyalty
+
+## Dashboard Development
+
+I built a Quarto dashboard using survey data from the Streaming Service Loyalty project.
+
+The dashboard summarizes:
+
+- Valid survey responses
+- Mean loyalty index
+- High cancellation risk
+- Past-year cancellation behavior
+- NPS categories
+- Loyalty statement averages
+
+## Why the Dashboard Matters
+
+The dashboard turns survey data into a clearer decision-making tool.
+
+Instead of only reading raw responses, the audience can quickly understand:
+
+- How loyal respondents appear to be
+- Whether cancellation risk is present
+- Which loyalty statements score higher or lower
+- How cancellation history relates to loyalty
+
+## Google Analytics 4
+
+My Google Analytics page highlights work with GA4 and digital measurement.
+
+GA4 helps businesses understand:
+
+- Where users come from
+- What users do on a website or app
+- Which actions support business goals
+- Whether campaigns are producing meaningful outcomes
+
+## Certification Evidence
+
+I completed the Google Analytics Certification in 2026.
+
+This supports my understanding of:
+
+- Digital measurement
+- Events
+- Conversions
+- Website behavior
+- Marketing performance analysis
+
+## Technical Skills Demonstrated
+
+This portfolio demonstrates experience with:
+
+- Quarto websites
+- Quarto dashboards
+- Revealjs presentations
+- R
+- Data visualization
+- GitHub Pages
+- Google Analytics 4
+- Excel-based survey analysis
+
+## Business Skills Demonstrated
+
+This portfolio also reflects:
+
+- Strategic thinking
+- Marketing research planning
+- Consumer behavior analysis
+- Professional communication
+- Project organization
+- Audience-focused reporting
+- Translating data into decisions
+
+## Strengths
+
+My strengths are strongest at the intersection of strategy, technology, and communication.
+
+I like work that involves:
+
+- Understanding the larger goal
+- Organizing the moving pieces
+- Finding useful patterns in information
+- Communicating clearly
+- Helping teams make better decisions
+
+## Career Objective
+
+Long term, I want to build toward leadership roles where I can help organizations improve systems, clarify strategy, and make better decisions with data.
+
+I am especially interested in roles connected to:
+
+- Business analytics
+- Digital strategy
+- Product thinking
+- Marketing analytics
+- Operations and execution
+
+## Closing
+
+This portfolio represents my current work in analytics, digital tools, marketing research, and business strategy.
+
+It shows the direction I want to keep building toward:
+
+**strategic, analytical, organized, and impact-focused.**
+
+<br>
+
+[← Return to Portfolio Home](index.html)
+
