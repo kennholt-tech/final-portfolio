@@ -84,3 +84,8 @@ My strengths are strongest when I can connect ideas, organize messy information,
 
 I am especially interested in work where data, systems, and people all matter. I want to help teams make smarter decisions, communicate more clearly, and build better structures around their goals.
 
+# Connect
+
+[Download Resume](files/Kennon-Holton-Tran-Resume.pdf){.btn .btn-primary .resume-button}
+[LinkedIn Profile](https://www.linkedin.com/in/kennonholton/){.btn .btn-outline-primary .linkedin-button}
+
