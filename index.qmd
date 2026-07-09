@@ -4,7 +4,7 @@ subtitle: "Business Administration, E-Business | Cal Poly Pomona"
 image: images/profile.jpg
 about:
   template: jolla
-  image-shape: round
+  image-shape: rectangle
 ---
 
 # Professional Summary
@@ -57,7 +57,8 @@ I am interested in roles that combine business strategy, analytics, digital mark
 # Education
 
 **California State Polytechnic University, Pomona**  
-Business Administration, E-Business
+Business Administration, E-Business  
+Minor: Marketing Management
 
 # Portfolio Highlights
 

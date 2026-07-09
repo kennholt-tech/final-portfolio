@@ -11,6 +11,29 @@ format: dashboard
 library(tidyverse)
 library(readxl)
 library(scales)
+
+# Portfolio color palette
+frozen_lake <- "#99DAFF"
+sky_blue <- "#70CBFF"
+canary_yellow <- "#FDFD87"
+pacific_blue <- "#5DA3AC"
+icy_aqua <- "#ACECE7"
+deep_teal <- "#255E64"
+
+portfolio_palette <- c(
+  pacific_blue,
+  sky_blue,
+  icy_aqua,
+  frozen_lake,
+  canary_yellow
+)
+
+portfolio_theme <- theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold", color = deep_teal),
+    axis.title = element_text(color = deep_teal),
+    panel.grid.minor = element_blank()
+  )
 ```
 
 ```{r}
@@ -60,7 +83,7 @@ avg_nps <- mean(survey_data$nps_score, na.rm = TRUE)
 #| content: valuebox
 #| title: "Valid Responses"
 #| icon: people
-#| color: primary
+#| color: "#5DA3AC"
 
 list(value = comma(valid_responses))
 ```
@@ -69,7 +92,7 @@ list(value = comma(valid_responses))
 #| content: valuebox
 #| title: "Mean Loyalty Index"
 #| icon: star
-#| color: success
+#| color: "#70CBFF"
 
 list(value = number(mean_loyalty, accuracy = 0.01))
 ```
@@ -78,7 +101,7 @@ list(value = number(mean_loyalty, accuracy = 0.01))
 #| content: valuebox
 #| title: "High Cancellation Risk"
 #| icon: exclamation-triangle
-#| color: warning
+#| color: "#FDFD87"
 
 list(value = percent(high_risk_pct, accuracy = 1))
 ```
@@ -87,7 +110,7 @@ list(value = percent(high_risk_pct, accuracy = 1))
 #| content: valuebox
 #| title: "Cancelled Last Year"
 #| icon: x-circle
-#| color: danger
+#| color: "#99DAFF"
 
 list(value = percent(cancelled_pct, accuracy = 1))
 ```
@@ -100,15 +123,16 @@ list(value = percent(cancelled_pct, accuracy = 1))
 survey_data |>
   filter(!is.na(nps_category)) |>
   count(nps_category) |>
-  ggplot(aes(x = reorder(nps_category, n), y = n)) +
-  geom_col() +
+  ggplot(aes(x = reorder(nps_category, n), y = n, fill = nps_category)) +
+  geom_col(show.legend = FALSE) +
   coord_flip() +
+  scale_fill_manual(values = portfolio_palette) +
   labs(
     x = "NPS Category",
     y = "Number of Respondents",
     title = "NPS Category Breakdown"
   ) +
-  theme_minimal()
+  portfolio_theme
 ```
 
 ```{r}
@@ -117,15 +141,16 @@ survey_data |>
 survey_data |>
   filter(!is.na(cancellation_risk)) |>
   count(cancellation_risk) |>
-  ggplot(aes(x = reorder(cancellation_risk, n), y = n)) +
-  geom_col() +
+  ggplot(aes(x = reorder(cancellation_risk, n), y = n, fill = cancellation_risk)) +
+  geom_col(show.legend = FALSE) +
   coord_flip() +
+  scale_fill_manual(values = portfolio_palette) +
   labs(
     x = "Cancellation Risk",
     y = "Number of Respondents",
     title = "Cancellation Risk Breakdown"
   ) +
-  theme_minimal()
+  portfolio_theme
 ```
 
 # Loyalty Drivers
@@ -151,7 +176,7 @@ loyalty_statement_data <- survey_data |>
 
 loyalty_statement_data |>
   ggplot(aes(x = reorder(statement, average_rating), y = average_rating)) +
-  geom_col() +
+  geom_col(fill = pacific_blue) +
   coord_flip() +
   scale_y_continuous(limits = c(0, 5)) +
   labs(
@@ -159,7 +184,7 @@ loyalty_statement_data |>
     y = "Average Rating",
     title = "Average Ratings for Loyalty Statements"
   ) +
-  theme_minimal()
+  portfolio_theme
 ```
 
 ```{r}
@@ -167,15 +192,19 @@ loyalty_statement_data |>
 
 survey_data |>
   filter(!is.na(cancelled_last_year), !is.na(loyalty_index)) |>
-  ggplot(aes(x = cancelled_last_year, y = loyalty_index)) +
-  geom_boxplot() +
+  ggplot(aes(x = cancelled_last_year, y = loyalty_index, fill = cancelled_last_year)) +
+  geom_boxplot(show.legend = FALSE) +
+  scale_fill_manual(values = c(
+    "No" = icy_aqua,
+    "Yes" = pacific_blue
+  )) +
   scale_y_continuous(limits = c(0, 5)) +
   labs(
     x = "Cancelled a Streaming Service Within the Past Year",
     y = "Loyalty Index",
     title = "Loyalty Index by Cancellation History"
   ) +
-  theme_minimal()
+  portfolio_theme
 ```
 
 # Cancellation Behavior
@@ -192,6 +221,7 @@ survey_data |>
   mutate(percent = n / sum(n)) |>
   ggplot(aes(x = cancelled_last_year, y = percent, fill = cancellation_risk)) +
   geom_col(position = "fill") +
+  scale_fill_manual(values = portfolio_palette) +
   scale_y_continuous(labels = percent_format()) +
   labs(
     x = "Cancelled a Streaming Service Within the Past Year",
@@ -199,7 +229,7 @@ survey_data |>
     fill = "Cancellation Risk",
     title = "Cancellation Risk by Past Cancellation"
   ) +
-  theme_minimal()
+  portfolio_theme
 ```
 
 ```{r}
@@ -208,14 +238,15 @@ survey_data |>
 survey_data |>
   filter(!is.na(cancellation_likelihood)) |>
   count(cancellation_likelihood) |>
-  ggplot(aes(x = factor(cancellation_likelihood), y = n)) +
-  geom_col() +
+  ggplot(aes(x = factor(cancellation_likelihood), y = n, fill = factor(cancellation_likelihood))) +
+  geom_col(show.legend = FALSE) +
+  scale_fill_manual(values = portfolio_palette) +
   labs(
     x = "Likelihood of Canceling in the Next 6 Months",
     y = "Number of Respondents",
     title = "Cancellation Likelihood Distribution"
   ) +
-  theme_minimal()
+  portfolio_theme
 ```
 
 # Data Notes

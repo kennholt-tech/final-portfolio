@@ -1,25 +1,166 @@
 /* Portfolio custom styling */
 
+:root {
+  --frozen-lake: #99DAFF;
+  --sky-blue: #70CBFF;
+  --canary-yellow: #FDFD87;
+  --pacific-blue: #5DA3AC;
+  --icy-aqua: #ACECE7;
+
+  --portfolio-deep: #245A78;
+  --portfolio-text: #1f2d2f;
+  --portfolio-soft: #F4FBFF;
+  --portfolio-border: #99DAFF;
+}
+
+/* Page background and text */
+body {
+  background: linear-gradient(180deg, #EAF8FF 0%, #ffffff 34%);
+  color: var(--portfolio-text);
+}
+
+/* Keep page content readable and left aligned */
+main.content {
+  text-align: left !important;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #245A78, var(--sky-blue)) !important;
+}
+
+.navbar-title,
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--canary-yellow) !important;
+  text-decoration: underline;
+}
+
+/* Title/about section */
+.quarto-title-block,
+.quarto-about-jolla,
+.about-entity,
+.about-contents {
+  text-align: left !important;
+}
+
+.quarto-about-jolla {
+  align-items: flex-start !important;
+}
+
+.quarto-about-jolla .about-entity {
+  text-align: left !important;
+  align-items: flex-start !important;
+}
+
+.quarto-about-jolla .about-contents {
+  text-align: left !important;
+}
+
+.quarto-title {
+  text-align: left !important;
+}
+
+.quarto-title h1,
+.quarto-title .subtitle,
+.quarto-title .quarto-title-meta {
+  text-align: left !important;
+}
+
+.about-image {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+.quarto-about-jolla img,
+.about-image img,
+img {
+  border-radius: 10px !important;
+}
+
+/* Main headings */
+h1, h2, h3 {
+  color: var(--portfolio-deep);
+  text-align: left !important;
+}
+
+h1 {
+  border-bottom: 3px solid var(--sky-blue);
+  padding-bottom: 0.3rem;
+}
+
+/* Links */
+a {
+  color: var(--portfolio-deep);
+}
+
+a:hover {
+  color: #1D8EC5;
+}
+
+/* Resume button */
+.resume-button {
+  background-color: var(--sky-blue) !important;
+  border-color: var(--sky-blue) !important;
+  color: #123847 !important;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 999px;
+  padding: 0.65rem 1.2rem;
+}
+
+.resume-button:hover {
+  background-color: var(--portfolio-deep) !important;
+  border-color: var(--portfolio-deep) !important;
+  color: white !important;
+}
+
+/* LinkedIn button */
+.linkedin-button {
+  color: var(--portfolio-deep) !important;
+  border-color: var(--sky-blue) !important;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  border-radius: 999px;
+  padding: 0.65rem 1.2rem;
+}
+
+.linkedin-button:hover {
+  background-color: var(--frozen-lake) !important;
+  color: var(--portfolio-deep) !important;
+  border-color: var(--portfolio-deep) !important;
+}
+
+/* Skills and tools section */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 2rem 0;
   text-align: left !important;
 }
 
 .skill-card {
-  border: 1px solid #dddddd;
-  border-radius: 10px;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 14px;
   padding: 1.5rem;
-  background-color: #f8f9fa;
+  background: linear-gradient(180deg, #ffffff 0%, #EAF8FF 100%);
+  box-shadow: 0 6px 18px rgba(112, 203, 255, 0.22);
 }
 
 .skill-card h1 {
   text-align: left !important;
   font-size: 1.6rem;
   margin-top: 0;
+  color: var(--portfolio-deep);
+  border-bottom: 2px solid var(--sky-blue);
 }
 
 .skill-card ul {
@@ -30,11 +171,68 @@
 
 .skill-card li {
   text-align: left !important;
+  margin-bottom: 0.25rem;
+}
+
+/* General image polish */
+img {
+  max-width: 100%;
+}
+
+/* Tables, dashboard cards, and content blocks */
+.card,
+.callout,
+.panel-tabset {
+  border-radius: 12px;
 }
 
 /* Stack the cards on smaller screens */
 @media (max-width: 800px) {
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .linkedin-button {
+    margin-left: 0;
+  }
+}
+
+/* Project page cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 1.5rem 0;
+  text-align: left !important;
+}
+
+.project-card {
+  border: 1px solid var(--portfolio-border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, #ffffff 0%, #EAF8FF 100%);
+  box-shadow: 0 6px 18px rgba(112, 203, 255, 0.16);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--portfolio-deep);
+  border-bottom: 2px solid var(--sky-blue);
+  padding-bottom: 0.25rem;
+}
+
+.project-card ul {
+  padding-left: 1.3rem;
+  margin-bottom: 0;
+}
+
+.project-card li {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 800px) {
+  .project-grid {
     grid-template-columns: 1fr;
   }
 }

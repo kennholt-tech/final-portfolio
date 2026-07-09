@@ -74,35 +74,35 @@
     "href": "projects.html#streaming-service-loyalty-research",
     "title": "Projects",
     "section": "Streaming Service Loyalty Research",
-    "text": "Streaming Service Loyalty Research\nProject Focus: Marketing research and consumer behavior\nThis project explores what influences customer loyalty to streaming services. The research focuses on why people keep, cancel, or switch platforms when they have multiple subscriptions, rising monthly costs, and many competing entertainment options.\nBusiness Question:\nWhat factors make customers stay loyal to a streaming service?\nKey Areas Explored:\n\nPrice sensitivity\nCustomer satisfaction\nContent quality\nOriginal content releases\nNumber of subscriptions\nCancellation intent\nPlatform loyalty\n\nSkills Demonstrated:\n\nMarketing research planning\nResearch question development\nConsumer behavior analysis\nSurvey design thinking\nData-driven decision-making\n\nProfessional Value:\nThis project shows my ability to think through a business problem from the customer’s perspective and connect research questions to real business decisions."
+    "text": "Streaming Service Loyalty Research\nProject Focus: Marketing research, consumer loyalty, and cancellation risk\nThis project examined consumer loyalty and cancellation risk among streaming service users. Streaming services operate in a competitive market where consumers can easily subscribe, cancel, or switch platforms. Because switching costs are low, companies need to understand which customers are loyal and which customers may be at risk of canceling.\nMain Research Question:\nWhat factors are associated with consumer loyalty and cancellation risk for streaming services?\nFinal Hypotheses:\n\nH1: Customers with higher loyalty index scores will show lower cancellation risk.\nH2: Net Promoter Score category is related to customer loyalty.\nH3: Past cancellation behavior is related to current cancellation risk.\nH4: Respondents who have cancelled a streaming service within the past year will have different loyalty levels than respondents who have not cancelled.\n\n\n\nKey Measures Used\n\nLoyalty Index\nNet Promoter Score category\nCancellation risk\nPast cancellation behavior\nFuture cancellation likelihood\n\n\n\nSkills Demonstrated\n\nMarketing research planning\nSurvey design and data cleaning\nLoyalty index development\nNet Promoter Score interpretation\nCancellation risk analysis\nChi-square testing\nBusiness insight development\n\n\n\nAnalysis Summary:\nThe final cleaned sample included 37 valid responses. A Loyalty Index was created by averaging five loyalty statement items. Respondents were also grouped into Net Promoter Score categories as promoters, passives, or detractors. Cancellation likelihood was recoded into high risk and low/moderate risk categories.\nThe results showed a mean Loyalty Index score of 3.89 out of 5, suggesting moderately strong loyalty among respondents. The Net Promoter Score results were mixed but positive, with 40% promoters, 40% passives, and 20% detractors. The analysis also found that 37.8% of respondents were classified as high cancellation risk.\nA chi-square test found a statistically significant relationship between past cancellation behavior and current cancellation risk. This result should be interpreted cautiously because of the small sample size, but it suggests that past cancellation behavior may be useful when identifying customers at risk of canceling.\nProfessional Value:\nThis project shows my ability to connect survey research to business decision-making. The findings can help streaming services identify at-risk subscribers earlier, monitor loyalty more effectively, and design retention strategies before customers cancel."
   },
   {
     "objectID": "projects.html#google-analytics-4-analysis",
     "href": "projects.html#google-analytics-4-analysis",
     "title": "Projects",
     "section": "Google Analytics 4 Analysis",
-    "text": "Google Analytics 4 Analysis\nProject Focus: Digital analytics and website measurement\nThis project used Google Analytics 4 to explore how businesses can measure website and app behavior. The work focused on events, conversions, realtime reports, and how analytics can support marketing decisions.\nBusiness Question:\nHow can website behavior data help a business understand whether its marketing is working?\nKey Areas Explored:\n\nData streams\nEvents\nConversions\nRealtime reporting\nUser behavior\nCampaign performance\nDigital measurement\n\nSkills Demonstrated:\n\nGA4 navigation\nEvent and conversion analysis\nDigital marketing measurement\nWebsite behavior interpretation\nBusiness performance analysis\n\nProfessional Value:\nThis project shows my ability to connect digital activity to business goals instead of only looking at surface-level traffic numbers."
+    "text": "Google Analytics 4 Analysis\nProject Focus: Digital analytics and website measurement\nThis project used Google Analytics 4 to explore how businesses can measure website and app behavior. The work focused on events, conversions, realtime reports, and how analytics can support marketing decisions.\nBusiness Question:\nHow can website behavior data help a business understand whether its marketing is working?\n\n\nKey Areas Explored\n\nData streams\nEvents\nConversions\nRealtime reporting\nUser behavior\nCampaign performance\nDigital measurement\n\n\n\nSkills Demonstrated\n\nGA4 navigation\nEvent and conversion analysis\nDigital marketing measurement\nWebsite behavior interpretation\nBusiness performance analysis\n\n\n\nProfessional Value:\nThis project shows my ability to connect digital activity to business goals instead of only looking at surface-level traffic numbers."
   },
   {
     "objectID": "projects.html#marketing-performance-dashboard",
     "href": "projects.html#marketing-performance-dashboard",
     "title": "Projects",
     "section": "Marketing Performance Dashboard",
-    "text": "Marketing Performance Dashboard\nProject Focus: Dashboard development and marketing analytics\nThis project used Quarto and R to build a dashboard that summarizes marketing campaign performance across several platforms. The dashboard uses metrics such as impressions, clicks, conversions, click-through rate, conversion rate, and cost per conversion.\nBusiness Question:\nWhich marketing platforms and campaign types are performing best?\nKey Metrics Used:\n\nImpressions\nClicks\nConversions\nClick-through rate\nConversion rate\nCost per conversion\n\nSkills Demonstrated:\n\nR programming\nQuarto dashboard development\nData visualization\nMarketing KPI analysis\nAudience-facing reporting\nDashboard organization\n\nProfessional Value:\nThis project shows my ability to turn performance data into a clear visual format that helps people compare results and make decisions."
+    "text": "Marketing Performance Dashboard\nProject Focus: Dashboard development and marketing analytics\nThis project used Quarto and R to build a dashboard that summarizes results from the Streaming Service Loyalty research project. The dashboard uses real survey data to display loyalty, NPS category, cancellation risk, and past cancellation behavior.\nBusiness Question:\nHow can survey data be turned into a clear dashboard that supports retention-focused decision-making?\n\n\nKey Metrics Used\n\nValid survey responses\nMean Loyalty Index\nNet Promoter Score category\nHigh cancellation risk\nPast cancellation behavior\nCancellation likelihood\n\n\n\nSkills Demonstrated\n\nR programming\nQuarto dashboard development\nData visualization\nSurvey data analysis\nMarketing KPI interpretation\nAudience-facing reporting\n\n\n\nProfessional Value:\nThis project shows my ability to turn research data into a clear visual format that helps people compare results and make decisions."
   },
   {
     "objectID": "projects.html#wallpix-innovation-project",
     "href": "projects.html#wallpix-innovation-project",
     "title": "Projects",
     "section": "WallPix Innovation Project",
-    "text": "WallPix Innovation Project\nProject Focus: Entrepreneurship and product strategy\nWallPix was developed as an innovation project focused on turning personal photos into customizable wall art. The project explored value proposition, target customers, product positioning, and business model development.\nBusiness Question:\nHow can a creative product idea be positioned for a specific customer need?\nKey Areas Explored:\n\nValue proposition\nTarget market\nCustomer need\nProduct positioning\nBusiness model planning\nCreative differentiation\n\nSkills Demonstrated:\n\nEntrepreneurial thinking\nProduct concept development\nCustomer value analysis\nBusiness model planning\nCreative strategy\n\nProfessional Value:\nThis project shows my ability to think beyond the product itself and consider how an idea creates value for a specific audience."
+    "text": "WallPix Innovation Project\nProject Focus: Entrepreneurship and product strategy\nWallPix was developed as an innovation project focused on turning personal photos into customizable wall art. The project explored value proposition, target customers, product positioning, and business model development.\nBusiness Question:\nHow can a creative product idea be positioned for a specific customer need?\n\n\nKey Areas Explored\n\nValue proposition\nTarget market\nCustomer need\nProduct positioning\nBusiness model planning\nCreative differentiation\n\n\n\nSkills Demonstrated\n\nEntrepreneurial thinking\nProduct concept development\nCustomer value analysis\nBusiness model planning\nCreative strategy\n\n\n\nProfessional Value:\nThis project shows my ability to think beyond the product itself and consider how an idea creates value for a specific audience."
   },
   {
     "objectID": "projects.html#career-branding-and-linkedin-strategy",
     "href": "projects.html#career-branding-and-linkedin-strategy",
     "title": "Projects",
     "section": "Career Branding and LinkedIn Strategy",
-    "text": "Career Branding and LinkedIn Strategy\nProject Focus: Professional positioning and communication\nThis project focused on building a stronger professional brand around strategic leadership, analytics, and digital business. It included refining profile language, identifying career direction, and communicating strengths more clearly to employers.\nBusiness Question:\nHow can a professional profile communicate a clear career direction quickly and effectively?\nKey Areas Explored:\n\nProfessional summary writing\nLinkedIn profile strategy\nCareer objective development\nSkills positioning\nPersonal branding\nAudience awareness\n\nSkills Demonstrated:\n\nProfessional communication\nCareer strategy\nPersonal branding\nLinkedIn optimization\nStrategic positioning\n\nProfessional Value:\nThis project shows my ability to communicate strengths clearly and align professional materials with a specific career direction."
+    "text": "Career Branding and LinkedIn Strategy\nProject Focus: Professional positioning and communication\nThis project focused on building a stronger professional brand around strategic leadership, analytics, and digital business. It included refining profile language, identifying career direction, and communicating strengths more clearly to employers.\nBusiness Question:\nHow can a professional profile communicate a clear career direction quickly and effectively?\n\n\nKey Areas Explored\n\nProfessional summary writing\nLinkedIn profile strategy\nCareer objective development\nSkills positioning\nPersonal branding\nAudience awareness\n\n\n\nSkills Demonstrated\n\nProfessional communication\nCareer strategy\nPersonal branding\nLinkedIn optimization\nStrategic positioning\n\n\n\nProfessional Value:\nThis project shows my ability to communicate strengths clearly and align professional materials with a specific career direction."
   },
   {
     "objectID": "index.html",
@@ -207,7 +207,7 @@
     "href": "presentation.html#kennon-holton-tran",
     "title": "Portfolio Presentation",
     "section": "Kennon Holton-Tran",
-    "text": "Kennon Holton-Tran\nBusiness Administration, E-Business\nCalifornia State Polytechnic University, Pomona\nPortfolio Focus:\nAnalytics, digital marketing, dashboards, and business strategy\n\nUse the arrow controls or press the right arrow key → to move through the presentation.\n← Back to Portfolio Home"
+    "text": "Kennon Holton-Tran\n\n\nBusiness Administration, E-Business\nMinor: Marketing Management\nCalifornia State Polytechnic University, Pomona\nPortfolio Focus:\nAnalytics, digital marketing, dashboards, and business strategy\n\nUse the arrow controls or press the right arrow key → to move through the presentation.\n← Back to Portfolio Home"
   },
   {
     "objectID": "presentation.html#career-direction",
@@ -221,14 +221,21 @@
     "href": "presentation.html#portfolio-overview",
     "title": "Portfolio Presentation",
     "section": "Portfolio Overview",
-    "text": "Portfolio Overview\nThis website includes:\n\nA professional home page\nA projects page\nA streaming service loyalty dashboard\nA Google Analytics page\nThis Revealjs presentation\n\nThe goal is to show both technical skill and business thinking."
+    "text": "Portfolio Overview\nThis website includes:\n\n\n\nA professional home page\nA projects page\nA streaming service loyalty dashboard\n\n\n\nA Google Analytics page\nA Revealjs presentation\nResume and LinkedIn links\n\n\nThe goal is to show both technical skill and business thinking."
   },
   {
-    "objectID": "presentation.html#featured-project",
-    "href": "presentation.html#featured-project",
+    "objectID": "presentation.html#featured-research-project",
+    "href": "presentation.html#featured-research-project",
     "title": "Portfolio Presentation",
-    "section": "Featured Project",
-    "text": "Featured Project\nStreaming Service Loyalty Research\nThis project explores what influences customer loyalty to streaming platforms.\nKey areas include:\n\nPrice sensitivity\nSatisfaction\nContent quality\nOriginal content\nCancellation intent\nPlatform loyalty"
+    "section": "Featured Research Project",
+    "text": "Featured Research Project\nStreaming Service Loyalty Research\nThis project examines consumer loyalty and cancellation risk among streaming service users.\nMain research question:\nWhat factors are associated with consumer loyalty and cancellation risk for streaming services?"
+  },
+  {
+    "objectID": "presentation.html#final-hypotheses",
+    "href": "presentation.html#final-hypotheses",
+    "title": "Portfolio Presentation",
+    "section": "Final Hypotheses",
+    "text": "Final Hypotheses\n\nH1: Customers with higher loyalty index scores will show lower cancellation risk.\nH2: Net Promoter Score category is related to customer loyalty.\nH3: Past cancellation behavior is related to current cancellation risk.\nH4: Respondents who cancelled a streaming service within the past year will have different loyalty levels than respondents who have not cancelled."
   },
   {
     "objectID": "presentation.html#dashboard-development",
@@ -249,21 +256,14 @@
     "href": "presentation.html#google-analytics-4",
     "title": "Portfolio Presentation",
     "section": "Google Analytics 4",
-    "text": "Google Analytics 4\nMy Google Analytics page highlights work with GA4 and digital measurement.\nGA4 helps businesses understand:\n\nWhere users come from\nWhat users do on a website or app\nWhich actions support business goals\nWhether campaigns are producing meaningful outcomes"
-  },
-  {
-    "objectID": "presentation.html#certification-evidence",
-    "href": "presentation.html#certification-evidence",
-    "title": "Portfolio Presentation",
-    "section": "Certification Evidence",
-    "text": "Certification Evidence\nI completed the Google Analytics Certification in 2026.\nThis supports my understanding of:\n\nDigital measurement\nEvents\nConversions\nWebsite behavior\nMarketing performance analysis"
+    "text": "Google Analytics 4\n\n\nMy Google Analytics page highlights work with GA4 and digital measurement.\nGA4 helps businesses understand:\n\nWhere users come from\nWhat users do on a website or app\nWhich actions support business goals\nWhether campaigns are producing meaningful outcomes"
   },
   {
     "objectID": "presentation.html#technical-skills-demonstrated",
     "href": "presentation.html#technical-skills-demonstrated",
     "title": "Portfolio Presentation",
     "section": "Technical Skills Demonstrated",
-    "text": "Technical Skills Demonstrated\nThis portfolio demonstrates experience with:\n\nQuarto websites\nQuarto dashboards\nRevealjs presentations\nR\nData visualization\nGitHub Pages\nGoogle Analytics 4\nExcel-based survey analysis"
+    "text": "Technical Skills Demonstrated\n\n\n\nQuarto websites\nQuarto dashboards\nRevealjs presentations\nR\nData visualization\n\n\n\nGitHub Pages\nGoogle Analytics 4\nExcel-based survey analysis\nDashboard storytelling\nWeb publishing"
   },
   {
     "objectID": "presentation.html#business-skills-demonstrated",

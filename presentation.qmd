@@ -5,6 +5,7 @@ author: "Kennon Holton-Tran"
 format:
   revealjs:
     theme: simple
+    css: presentation.css
     slide-number: true
     controls: true
     progress: true
@@ -15,7 +16,12 @@ format:
 
 ## Kennon Holton-Tran
 
-Business Administration, E-Business  
+:::: {.columns}
+
+::: {.column width="62%"}
+
+**Business Administration, E-Business**  
+**Minor: Marketing Management**  
 California State Polytechnic University, Pomona
 
 **Portfolio Focus:**  
@@ -26,6 +32,16 @@ Analytics, digital marketing, dashboards, and business strategy
 **Use the arrow controls or press the right arrow key → to move through the presentation.**
 
 [← Back to Portfolio Home](index.html)
+
+:::
+
+::: {.column width="38%"}
+
+![](images/profile.jpg){.profile-slide-img}
+
+:::
+
+::::
 
 ## Career Direction
 
@@ -44,28 +60,43 @@ I am interested in work that combines:
 
 This website includes:
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 - A professional home page
 - A projects page
 - A streaming service loyalty dashboard
+
+:::
+
+::: {.column width="50%"}
+
 - A Google Analytics page
-- This Revealjs presentation
+- A Revealjs presentation
+- Resume and LinkedIn links
+
+:::
+
+::::
 
 The goal is to show both technical skill and business thinking.
 
-## Featured Project
+## Featured Research Project
 
 ### Streaming Service Loyalty Research
 
-This project explores what influences customer loyalty to streaming platforms.
+This project examines consumer loyalty and cancellation risk among streaming service users.
 
-Key areas include:
+**Main research question:**  
+What factors are associated with consumer loyalty and cancellation risk for streaming services?
 
-- Price sensitivity
-- Satisfaction
-- Content quality
-- Original content
-- Cancellation intent
-- Platform loyalty
+## Final Hypotheses
+
+- **H1:** Customers with higher loyalty index scores will show lower cancellation risk.
+- **H2:** Net Promoter Score category is related to customer loyalty.
+- **H3:** Past cancellation behavior is related to current cancellation risk.
+- **H4:** Respondents who cancelled a streaming service within the past year will have different loyalty levels than respondents who have not cancelled.
 
 ## Dashboard Development
 
@@ -93,6 +124,10 @@ Instead of only reading raw responses, the audience can quickly understand:
 
 ## Google Analytics 4
 
+:::: {.columns}
+
+::: {.column width="55%"}
+
 My Google Analytics page highlights work with GA4 and digital measurement.
 
 GA4 helps businesses understand:
@@ -102,30 +137,41 @@ GA4 helps businesses understand:
 - Which actions support business goals
 - Whether campaigns are producing meaningful outcomes
 
-## Certification Evidence
+:::
 
-I completed the Google Analytics Certification in 2026.
+::: {.column width="45%"}
 
-This supports my understanding of:
+![](images/ga4-certification.png){.cert-slide-img}
 
-- Digital measurement
-- Events
-- Conversions
-- Website behavior
-- Marketing performance analysis
+:::
+
+::::
 
 ## Technical Skills Demonstrated
 
-This portfolio demonstrates experience with:
+:::: {.columns}
+
+::: {.column width="50%"}
 
 - Quarto websites
 - Quarto dashboards
 - Revealjs presentations
 - R
 - Data visualization
+
+:::
+
+::: {.column width="50%"}
+
 - GitHub Pages
 - Google Analytics 4
 - Excel-based survey analysis
+- Dashboard storytelling
+- Web publishing
+
+:::
+
+::::
 
 ## Business Skills Demonstrated
 

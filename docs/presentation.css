@@ -1,0 +1,94 @@
+:root {
+  --frozen-lake: #99DAFF;
+  --sky-blue: #70CBFF;
+  --canary-yellow: #FDFD87;
+  --pacific-blue: #5DA3AC;
+  --icy-aqua: #ACECE7;
+  --deep-blue: #245A78;
+  --text-dark: #1f2d2f;
+}
+
+/* Slide background and text */
+.reveal {
+  color: var(--text-dark);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slide-background-content {
+  background: linear-gradient(135deg, #ffffff 0%, #EAF8FF 55%, #F6FFFF 100%);
+}
+
+/* Headings */
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--deep-blue);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.reveal h2 {
+  border-bottom: 5px solid var(--sky-blue);
+  padding-bottom: 0.25em;
+}
+
+/* Links */
+.reveal a {
+  color: var(--deep-blue);
+}
+
+.reveal a:hover {
+  color: var(--pacific-blue);
+}
+
+/* Lists */
+.reveal ul {
+  margin-top: 0.5em;
+}
+
+.reveal li {
+  margin-bottom: 0.25em;
+}
+
+/* Image styling */
+.profile-slide-img {
+  border-radius: 16px;
+  max-height: 420px;
+  box-shadow: 0 8px 24px rgba(36, 90, 120, 0.25);
+}
+
+.cert-slide-img {
+  border-radius: 12px;
+  max-height: 430px;
+  box-shadow: 0 8px 24px rgba(36, 90, 120, 0.18);
+  background: white;
+}
+
+/* Footer back-home link */
+.reveal .footer {
+  font-size: 0.45em;
+}
+
+.reveal .footer a {
+  color: var(--deep-blue);
+  font-weight: 600;
+}
+
+/* Progress bar */
+.reveal .progress {
+  color: var(--sky-blue);
+}
+
+/* Controls */
+.reveal .controls {
+  color: var(--deep-blue);
+}
+
+/* Small highlight effect */
+strong {
+  color: var(--deep-blue);
+}
+

@@ -7,33 +7,60 @@ This page highlights selected work in analytics, digital marketing, business str
 
 ## Streaming Service Loyalty Research
 
-**Project Focus:** Marketing research and consumer behavior
+**Project Focus:** Marketing research, consumer loyalty, and cancellation risk
 
-This project explores what influences customer loyalty to streaming services. The research focuses on why people keep, cancel, or switch platforms when they have multiple subscriptions, rising monthly costs, and many competing entertainment options.
+This project examined consumer loyalty and cancellation risk among streaming service users. Streaming services operate in a competitive market where consumers can easily subscribe, cancel, or switch platforms. Because switching costs are low, companies need to understand which customers are loyal and which customers may be at risk of canceling.
 
-**Business Question:**  
-What factors make customers stay loyal to a streaming service?
+**Main Research Question:**  
+What factors are associated with consumer loyalty and cancellation risk for streaming services?
 
-**Key Areas Explored:**
+**Final Hypotheses:**
 
-- Price sensitivity
-- Customer satisfaction
-- Content quality
-- Original content releases
-- Number of subscriptions
-- Cancellation intent
-- Platform loyalty
+- **H1:** Customers with higher loyalty index scores will show lower cancellation risk.
+- **H2:** Net Promoter Score category is related to customer loyalty.
+- **H3:** Past cancellation behavior is related to current cancellation risk.
+- **H4:** Respondents who have cancelled a streaming service within the past year will have different loyalty levels than respondents who have not cancelled.
 
-**Skills Demonstrated:**
+::: {.project-grid}
+
+::: {.project-card}
+
+### Key Measures Used
+
+- Loyalty Index
+- Net Promoter Score category
+- Cancellation risk
+- Past cancellation behavior
+- Future cancellation likelihood
+
+:::
+
+::: {.project-card}
+
+### Skills Demonstrated
 
 - Marketing research planning
-- Research question development
-- Consumer behavior analysis
-- Survey design thinking
-- Data-driven decision-making
+- Survey design and data cleaning
+- Loyalty index development
+- Net Promoter Score interpretation
+- Cancellation risk analysis
+- Chi-square testing
+- Business insight development
+
+:::
+
+:::
+
+**Analysis Summary:**
+
+The final cleaned sample included 37 valid responses. A Loyalty Index was created by averaging five loyalty statement items. Respondents were also grouped into Net Promoter Score categories as promoters, passives, or detractors. Cancellation likelihood was recoded into high risk and low/moderate risk categories.
+
+The results showed a mean Loyalty Index score of 3.89 out of 5, suggesting moderately strong loyalty among respondents. The Net Promoter Score results were mixed but positive, with 40% promoters, 40% passives, and 20% detractors. The analysis also found that 37.8% of respondents were classified as high cancellation risk.
+
+A chi-square test found a statistically significant relationship between past cancellation behavior and current cancellation risk. This result should be interpreted cautiously because of the small sample size, but it suggests that past cancellation behavior may be useful when identifying customers at risk of canceling.
 
 **Professional Value:**  
-This project shows my ability to think through a business problem from the customer’s perspective and connect research questions to real business decisions.
+This project shows my ability to connect survey research to business decision-making. The findings can help streaming services identify at-risk subscribers earlier, monitor loyalty more effectively, and design retention strategies before customers cancel.
 
 ## Google Analytics 4 Analysis
 
@@ -44,7 +71,11 @@ This project used Google Analytics 4 to explore how businesses can measure websi
 **Business Question:**  
 How can website behavior data help a business understand whether its marketing is working?
 
-**Key Areas Explored:**
+::: {.project-grid}
+
+::: {.project-card}
+
+### Key Areas Explored
 
 - Data streams
 - Events
@@ -54,13 +85,21 @@ How can website behavior data help a business understand whether its marketing i
 - Campaign performance
 - Digital measurement
 
-**Skills Demonstrated:**
+:::
+
+::: {.project-card}
+
+### Skills Demonstrated
 
 - GA4 navigation
 - Event and conversion analysis
 - Digital marketing measurement
 - Website behavior interpretation
 - Business performance analysis
+
+:::
+
+:::
 
 **Professional Value:**  
 This project shows my ability to connect digital activity to business goals instead of only looking at surface-level traffic numbers.
@@ -69,31 +108,43 @@ This project shows my ability to connect digital activity to business goals inst
 
 **Project Focus:** Dashboard development and marketing analytics
 
-This project used Quarto and R to build a dashboard that summarizes marketing campaign performance across several platforms. The dashboard uses metrics such as impressions, clicks, conversions, click-through rate, conversion rate, and cost per conversion.
+This project used Quarto and R to build a dashboard that summarizes results from the Streaming Service Loyalty research project. The dashboard uses real survey data to display loyalty, NPS category, cancellation risk, and past cancellation behavior.
 
 **Business Question:**  
-Which marketing platforms and campaign types are performing best?
+How can survey data be turned into a clear dashboard that supports retention-focused decision-making?
 
-**Key Metrics Used:**
+::: {.project-grid}
 
-- Impressions
-- Clicks
-- Conversions
-- Click-through rate
-- Conversion rate
-- Cost per conversion
+::: {.project-card}
 
-**Skills Demonstrated:**
+### Key Metrics Used
+
+- Valid survey responses
+- Mean Loyalty Index
+- Net Promoter Score category
+- High cancellation risk
+- Past cancellation behavior
+- Cancellation likelihood
+
+:::
+
+::: {.project-card}
+
+### Skills Demonstrated
 
 - R programming
 - Quarto dashboard development
 - Data visualization
-- Marketing KPI analysis
+- Survey data analysis
+- Marketing KPI interpretation
 - Audience-facing reporting
-- Dashboard organization
+
+:::
+
+:::
 
 **Professional Value:**  
-This project shows my ability to turn performance data into a clear visual format that helps people compare results and make decisions.
+This project shows my ability to turn research data into a clear visual format that helps people compare results and make decisions.
 
 ## WallPix Innovation Project
 
@@ -104,7 +155,11 @@ WallPix was developed as an innovation project focused on turning personal photo
 **Business Question:**  
 How can a creative product idea be positioned for a specific customer need?
 
-**Key Areas Explored:**
+::: {.project-grid}
+
+::: {.project-card}
+
+### Key Areas Explored
 
 - Value proposition
 - Target market
@@ -113,13 +168,21 @@ How can a creative product idea be positioned for a specific customer need?
 - Business model planning
 - Creative differentiation
 
-**Skills Demonstrated:**
+:::
+
+::: {.project-card}
+
+### Skills Demonstrated
 
 - Entrepreneurial thinking
 - Product concept development
 - Customer value analysis
 - Business model planning
 - Creative strategy
+
+:::
+
+:::
 
 **Professional Value:**  
 This project shows my ability to think beyond the product itself and consider how an idea creates value for a specific audience.
@@ -133,7 +196,11 @@ This project focused on building a stronger professional brand around strategic 
 **Business Question:**  
 How can a professional profile communicate a clear career direction quickly and effectively?
 
-**Key Areas Explored:**
+::: {.project-grid}
+
+::: {.project-card}
+
+### Key Areas Explored
 
 - Professional summary writing
 - LinkedIn profile strategy
@@ -142,13 +209,21 @@ How can a professional profile communicate a clear career direction quickly and 
 - Personal branding
 - Audience awareness
 
-**Skills Demonstrated:**
+:::
+
+::: {.project-card}
+
+### Skills Demonstrated
 
 - Professional communication
 - Career strategy
 - Personal branding
 - LinkedIn optimization
 - Strategic positioning
+
+:::
+
+:::
 
 **Professional Value:**  
 This project shows my ability to communicate strengths clearly and align professional materials with a specific career direction.
